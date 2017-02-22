@@ -38,9 +38,9 @@ seo: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
+#  about: /about
   archives: /archives
-  tags: /tags
+#  tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -70,9 +70,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -153,7 +153,8 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar:
+avatar: /uploads/avatar.jpg
+# description: 
 
 
 # Table Of Contents in the Sidebar
@@ -208,7 +209,7 @@ excerpt_description: true
 # Automatically Excerpt. Not recommand.
 # Please use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Post meta display settings
@@ -263,10 +264,10 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: afd325d3333e718fc607b569c45d57a4
 
 # Duoshuo ShortName
-#duoshuo_shortname:
+duoshuo_shortname: 200code
 
 # Disqus
 #disqus_shortname:
@@ -294,7 +295,7 @@ mathjax:
 #add_this_id:
 
 # Share
-#duoshuo_share: true
+duoshuo_share: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
