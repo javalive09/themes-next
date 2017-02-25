@@ -1,5 +1,5 @@
 {% extends '_layout.swig' %}
-{% import '_macro/post-collapse.swig' as post_template %}
+{% import '_macro/post.swig' as post_template %}
 {% import '_macro/sidebar.swig' as sidebar_template %}
 
 {% block title %} {{ config.title }} {% endblock %}
@@ -9,29 +9,15 @@
 {% endblock %}
 
 {% block content %}
-
-  <section id="posts" class="posts-collapse">
-
-
+  <section id="posts" class="posts-expand">
     {% for post in page.posts %}
-
-      {{ post_template.render(post) }}
-
+      {{ post_template.render(post, true) }}
     {% endfor %}
-
   </section>
 
+  {% include '_partials/pagination.swig' %}
 {% endblock %}
 
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
-{% endblock %}
-
-
-{% block script_extra %}
-  {% if theme.use_motion %}
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  {% endif %}
 {% endblock %}
